@@ -147,4 +147,5 @@ dataSet = [
 # data2 = np.asarray([[0.5,0.46,0.33], [0.7,0.68,0.55], [0.9,0.35,0.48], [0.59, 0.66, 0.24]])
 data = np.asarray(dataSet)
 centers_cluster, ss_error = elbow(data)
-show_elbow(ss_error)
+show_2D_cluster(data, 2, centers_cluster[2][0], centers_cluster[2][1])
+show_2D_cluster(data, 4, centers_cluster[4][0], centers_cluster[4][1])
